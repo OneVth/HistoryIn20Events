@@ -9,27 +9,27 @@ namespace HistoryIn20Events
     internal class HistoricalEvent
     {
         string year;
-        string @event;
+        string name;
         string description;
         string extraDescription;
 
         public string Year { get { return year; } private set { year = value; } }
-        public string Event { get { return @event; } private set { @event = value; } }
+        public string Name { get { return name; } private set { name = value; } }
         public string Description { get { return description; } private set { description = value; } }
         public string ExtraDescription { get { return extraDescription; } private set { extraDescription = value; } }
 
-        public HistoricalEvent(string year, string @event, string description)
+        public HistoricalEvent(string year, string name, string description)
         {
             Year = year;
-            Event = @event;
+            Name = name;
             Description = description;
             ExtraDescription = null;
         }
 
-        public HistoricalEvent(string year, string @event, string description, string extraDescription)
+        public HistoricalEvent(string year, string name, string description, string extraDescription)
         {
             Year = year;
-            Event = @event;
+            Name = name;
             Description = description;
             ExtraDescription = extraDescription;
         }
